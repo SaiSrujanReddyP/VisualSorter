@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sorting Visualizer</h1>
+        
+        <div class="controls">
+            <div class="algorithm-buttons">
+                <button class="algorithm-button" onclick="selectAlgorithm(1)">Algorithm 1</button>
+                <button class="algorithm-button" onclick="selectAlgorithm(2)">Algorithm 2</button>
+                <button class="algorithm-button" onclick="selectAlgorithm(3)">Algorithm 3</button>
+                <button class="algorithm-button" onclick="selectAlgorithm(4)">Algorithm 4</button>
+                <button class="algorithm-button" onclick="selectAlgorithm(5)">Algorithm 5</button>
+            </div>
+            
+            <div class="array-controls">
+                <button class="new-array-button" onclick="generateNewArray()">Generate New Array</button>
+                
+                <div class="slider">
+                    <label for="array-size-slider">Array Size:</label>
+                    <input type="range" id="array-size-slider" min="10" max="100" value="50" class="array-slider" onchange="changeArraySize(this.value)">
+                </div>
+                
+                <div class="slider">
+                    <label for="speed-slider">Speed:</label>
+                    <input type="range" id="speed-slider" min="1" max="10" value="5" class="speed-slider" onchange="changeAnimationSpeed(this.value)">
+                </div>
+            </div>
+        </div>
+        
+        <div class="bars-container">
+            <!-- Collection of bars will be dynamically generated here -->
+        </div>
+    </div>
+</body>
+</html>
