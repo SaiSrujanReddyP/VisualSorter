@@ -1,0 +1,48 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #F1F6F9;
+
+}
+
+.title {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    margin-bottom: 0%;
+}
+
+.description {
+    margin-top: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+.container {
+    padding: 0% 8%;
+}
+
+.head {
+    background-color: #0A4D68;
+    padding: 2%;
+    color: #F1F6F9;
+    width: 100%;
+    padding-bottom: 3.5%;
+}
+
+.arr {
+    /* display: inline-block; */
+    width: 1144px;
+    /* height: 440px; */
+    text-align: center;
+    /* overflow-y: hidden; */
+
+
+
+}
+
+.bar {
+    display: inline-block;
+    /* width: 0.64%; */
+    height: 100px;
+    margin: 0px 2px 0px 2px;
+}
