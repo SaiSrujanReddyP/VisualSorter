@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css
+    ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="head">
+        <h1 class="title">Sorting Visualizer </h1><br>
+        <p class="description"> Watch chaos turn into clarity and witness the Harmonious Dance of Algorithms!</p>
+    </div>
+    <button class="new_array btn btn-dark">New array</button> <br>
+
+
+    <p>Array size</p>
+    <input class="barWidth" type="range" min="0" max="24" value="20"><br>
+    <p>Speed of Algorithm</p>
+    <input class="speed" type="range" min="0" max="4" value="2"><br>
+
+    <div class="container">
+    </div>
+
+    <div class="row d-flex justify-content-evenly">
+        <div class="col-lg-2">
+            <button onclick="selectionSort()" class="ss btn btn-dark btn-lg">Selection Sort</button>
+
+        </div>
+        <div class="col-lg-2">
+            <button onclick="bubbleSort()" class="bs btn btn-dark btn-lg"> Bubble Sort</button>
+
+        </div>
+        <div class="col-lg-2">
+            <button onclick="insertionSort()" class="is btn btn-dark btn-lg "> Insertion Sort</button>
+
+        </div>
+        <div class="col-lg-2">
+            <button onclick="mergeSort()" class="ms btn btn-dark btn-lg"> Merge Sort</button>
+
+        </div>
+        <div class="col-lg-2">
+            <button onclick="quickSort()" class="qs btn btn-dark btn-lg"> Quick Sort</button>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="arr" >
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="sort/selection.js"></script>
+    <script src="sort/bubble.js"></script>
+    <script src="sort/insertion.js"></script>
+    <script src="sort/merge.js"></script>
+    <script src="sort/quick.js"></script>
+
+
+</body>
+
+</html>
